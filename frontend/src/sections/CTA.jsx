@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { useNavigate } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -8,6 +9,7 @@ const CTA = () => {
   const sectionRef = useRef(null);
   const textRef = useRef(null);
   const buttonRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -76,8 +78,8 @@ const CTA = () => {
 
         <button 
           ref={buttonRef}
-          data-cursor="hover"
-          className="group relative overflow-hidden px-14 py-6 border border-[#EAAC7F]/40 hover:border-[#EAAC7F] transition-colors duration-700 bg-[#1A1A1A]/50 backdrop-blur-md mt-8"
+          onClick={() => navigate('/contact')}
+          className="group relative overflow-hidden px-14 py-6 border border-[#EAAC7F]/40 hover:border-[#EAAC7F] transition-colors duration-700 bg-[#1A1A1A]/50 backdrop-blur-md mt-8 cursor-pointer"
         >
           <span className="absolute inset-0 w-full h-full bg-[#EAAC7F] translate-y-[101%] group-hover:translate-y-0 transition-transform duration-700 ease-[cubic-bezier(0.76,0,0.24,1)] z-0" />
           <span className="relative z-10 text-[#F8F5F0] group-hover:text-[#1A1A1A] text-sm uppercase tracking-[0.3em] transition-colors duration-700">

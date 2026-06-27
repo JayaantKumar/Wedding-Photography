@@ -1,4 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+const footerLinks = [
+  { name: 'Home', path: '/' },
+  { name: 'About', path: '/about' },
+  { name: 'Services', path: '/services' },
+  { name: 'Portfolio', path: '/portfolio' },
+  { name: 'Destinations', path: '/destinations' },
+  { name: 'Contact', path: '/contact' }
+];
 
 const Footer = () => {
   return (
@@ -25,8 +35,7 @@ const Footer = () => {
                 />
                 <button 
                   type="submit"
-                  data-cursor="hover"
-                  className="absolute right-0 bottom-4 text-xs tracking-[0.2em] text-[#EAAC7F] uppercase hover:text-[#C75D2C] transition-colors"
+                  className="absolute right-0 bottom-4 text-xs tracking-[0.2em] text-[#EAAC7F] uppercase hover:text-[#C75D2C] transition-colors cursor-pointer"
                 >
                   Submit
                 </button>
@@ -38,15 +47,14 @@ const Footer = () => {
           <div className="md:col-span-3 md:col-start-7">
             <h4 className="text-xs uppercase tracking-[0.3em] text-[#EAAC7F] mb-8 font-sans">Menu</h4>
             <ul className="flex flex-col gap-4">
-              {['Home', 'About', 'Services', 'Portfolio', 'Destinations', 'Contact'].map((link) => (
-                <li key={link}>
-                  <a 
-                    href={`#${link.toLowerCase()}`}
-                    data-cursor="hover"
+              {footerLinks.map((link) => (
+                <li key={link.name}>
+                  <Link 
+                    to={link.path}
                     className="text-lg font-serif opacity-80 hover:opacity-100 hover:text-[#EAAC7F] transition-all duration-300 inline-block hover:translate-x-2"
                   >
-                    {link}
-                  </a>
+                    {link.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -56,15 +64,15 @@ const Footer = () => {
           <div className="md:col-span-3">
             <h4 className="text-xs uppercase tracking-[0.3em] text-[#EAAC7F] mb-8 font-sans">Contact</h4>
             <div className="flex flex-col gap-6 text-sm font-sans opacity-80 tracking-wide">
-              <a href="mailto:inquire@newresolutionstudio.com" data-cursor="hover" className="hover:text-[#EAAC7F] transition-colors">
+              <a href="mailto:inquire@newresolutionstudio.com" className="hover:text-[#EAAC7F] transition-colors">
                 inquire@newresolutionstudio.com
               </a>
-              <a href="tel:+910000000000" data-cursor="hover" className="hover:text-[#EAAC7F] transition-colors">
-                +91 (000) 000-0000
+              <a href="tel:+33123456789" className="hover:text-[#EAAC7F] transition-colors">
+                +33 1 23 45 67 89
               </a>
               <div className="leading-relaxed">
-                <p>Headquarters</p>
-                <p>Durg, Chhattisgarh, India</p>
+                <p>Atelier Headquarters</p>
+                <p>15 Place Vendôme, Paris, France</p>
                 <p>Available Worldwide</p>
               </div>
             </div>
@@ -81,9 +89,9 @@ const Footer = () => {
           <div className="w-full flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-[0.3em] font-sans opacity-50 gap-4">
             <span>&copy; {new Date().getFullYear()} Newresolutionstudio</span>
             <div className="flex gap-6">
-              <a href="#" data-cursor="hover" className="hover:text-[#EAAC7F]">Instagram</a>
-              <a href="#" data-cursor="hover" className="hover:text-[#EAAC7F]">Pinterest</a>
-              <a href="#" data-cursor="hover" className="hover:text-[#EAAC7F]">LinkedIn</a>
+              <a href="#" className="hover:text-[#EAAC7F]">Instagram</a>
+              <a href="#" className="hover:text-[#EAAC7F]">Pinterest</a>
+              <a href="#" className="hover:text-[#EAAC7F]">LinkedIn</a>
             </div>
             <span>All Rights Reserved</span>
           </div>
