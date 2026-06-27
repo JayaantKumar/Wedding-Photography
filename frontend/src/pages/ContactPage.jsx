@@ -7,7 +7,7 @@ const ContactPage = () => {
     <div className="pt-0">
       <ContactForm />
       {/* Optional: You can keep or remove the CTA section below the form */}
-      {/* <CTA /> */} 
+       <CTA /> 
     </div>
   );
 };
