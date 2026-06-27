@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+/* Tailwind v4 Theme Configuration */
+@theme {
+  --color-primary: #EAAC7F;
+  --color-secondary: #C75D2C;
+  
+  --color-ivory: #F8F5F0;
+  --color-champagne: #EFE6D7;
+  --color-deepBrown: #2D2420;
+  --color-charcoal: #1A1A1A;
+  
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", sans-serif;
+}
+
+/* Base Variables */
+:root {
+  --primary: #EAAC7F;
+  --secondary: #C75D2C;
+  --ivory: #F8F5F0;
+  --champagne: #EFE6D7;
+  --white: #FCFAF7;
+  --brown: #3B2C27;
+  --dark: #171717;
+  --glass: rgba(255, 255, 255, 0.08);
+  --radius: 20px;
+}
+
+html {
+  /* Prevent native smooth scrolling from fighting with Lenis */
+  scroll-behavior: auto;
+}
+
+body {
+  background-color: var(--ivory);
+  color: var(--dark);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  
+  /* Make sure the cursor is explicitly set to default */
+  cursor: auto; 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  user-select: none;
+}
+
+section {
+  position: relative;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Ensure links and interactives have the standard pointer */
+a, button, input, textarea {
+  cursor: pointer;
+}
+
+::selection {
+  background-color: var(--primary);
+  color: var(--ivory);
+}
+
+/* Utility for vertical text used in the Hero scroll indicator */
+.writing-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
