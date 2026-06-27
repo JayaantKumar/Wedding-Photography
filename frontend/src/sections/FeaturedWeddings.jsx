@@ -16,7 +16,7 @@ const weddings = [
     id: 2,
     title: 'Royal Heritage',
     location: 'Udaipur, India',
-    img: 'https://images.unsplash.com/photo-1583939000148-22ba0a09e1e2?q=80&w=2070&auto=format&fit=crop',
+    img: 'https://static.wixstatic.com/media/59c923_77225967c7ed4e1b805017f02620d4a5~mv2.jpg/v1/fill/w_640,h_438,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/59c923_77225967c7ed4e1b805017f02620d4a5~mv2.jpg',
     gridClass: 'md:col-span-5 h-[50vh] md:h-[60vh]',
   },
   {

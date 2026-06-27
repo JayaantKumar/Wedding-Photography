@@ -47,7 +47,7 @@ const WhyChooseUs = () => {
         {/* Left Column: Image with Parallax feel */}
         <div className="relative h-[600px] overflow-hidden">
           <img 
-            src="https://images.unsplash.com/photo-1542393545-10f5cde6c810?q=80&w=2070&auto=format&fit=crop" 
+            src="https://greenhollyweddings.com/wp-content/uploads/sites/20828/2023/02/Luxury-wedding-photographers-michigan-01-scaled.jpg" 
             alt="Luxury Wedding Venue" 
             className="w-full h-full object-cover grayscale opacity-80"
           />

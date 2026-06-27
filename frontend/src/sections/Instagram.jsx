@@ -6,13 +6,12 @@ import { FiInstagram } from 'react-icons/fi';
 gsap.registerPlugin(ScrollTrigger);
 
 const instaImages = [
-  'https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1000&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=1000&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1000&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1000&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1583939000148-22ba0a09e1e2?q=80&w=1000&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1532712938310-34cb3982ef74?q=80&w=1000&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1546942111-470bc5529816?q=80&w=1000&auto=format&fit=crop',
+  'https://static.wixstatic.com/media/59c923_77225967c7ed4e1b805017f02620d4a5~mv2.jpg/v1/fill/w_640,h_438,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/59c923_77225967c7ed4e1b805017f02620d4a5~mv2.jpg',
+  'https://www.pranayaweddings.com/assets/images/shape/wedding-catering.webp',
+  'https://cdn0.weddingwire.in/article/3676/original/1280/jpg/76763-best-wedding-entertainment-ideas-the-wedding-salad-games.jpeg',
+  'https://images.prismic.io/rigbiswas/aU6C7HNYClf9opbj_wedding-couple-poses-for-timeless-photo.webp?auto=format,compress',
+  'https://assets.cntraveller.in/photos/6886f6f7ad2e6713a0089d80/16:9/w_1280,c_limit/IMG_3631.jpg',
+  'https://www.bodycraft.co.in/hubfs/unnamed%20-%202025-12-25T152552.860.webp',
 ];
 
 const Instagram = () => {
@@ -60,7 +59,7 @@ const Instagram = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-24 bg-[#1A1A1A] relative w-full overflow-hidden">
+    <section ref={sectionRef} className="py-24 bg-[#323232] relative w-full overflow-hidden">
       
       {/* Inject custom CSS for the hardware-accelerated marquee loop */}
       <style>
@@ -84,11 +83,11 @@ const Instagram = () => {
         {/* Section Header */}
         <div ref={headerRef} className="flex flex-col md:flex-row justify-between items-end gap-6">
           <div>
-            <p className="text-[#EAAC7F] text-xs uppercase tracking-[0.3em] font-sans mb-4">
+            <p className="text-[#EAAC7F] text-xs uppercase tracking-[0.3em] font-sans mb-4 opacity-80">
               Social Journal
             </p>
-            <h2 className="text-4xl md:text-5xl font-serif text-[#F8F5F0] leading-tight">
-              Follow The <span className="italic text-[#C75D2C]">Journey</span>
+            <h2 className="text-4xl md:text-5xl font-serif text-[#DDD0C8] leading-tight">
+              Follow The <span className="italic text-[#EAAC7F]">Journey</span>
             </h2>
           </div>
           
@@ -96,8 +95,7 @@ const Instagram = () => {
             href="https://instagram.com" 
             target="_blank"
             rel="noreferrer"
-            data-cursor="hover"
-            className="group relative inline-flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-[#F8F5F0] pb-2"
+            className="group relative inline-flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-[#DDD0C8] pb-2 cursor-pointer"
           >
             <FiInstagram className="w-4 h-4 text-[#EAAC7F]" />
             <span className="relative z-10">@newresolutionstudio</span>
@@ -113,8 +111,8 @@ const Instagram = () => {
         className="marquee-container w-full overflow-hidden relative"
       >
         {/* Gradient Masks for smooth fade on edges */}
-        <div className="absolute top-0 left-0 w-24 md:w-64 h-full bg-gradient-to-r from-[#1A1A1A] to-transparent z-10 pointer-events-none" />
-        <div className="absolute top-0 right-0 w-24 md:w-64 h-full bg-gradient-to-l from-[#1A1A1A] to-transparent z-10 pointer-events-none" />
+        <div className="absolute top-0 left-0 w-24 md:w-64 h-full bg-gradient-to-r from-[#323232] to-transparent z-10 pointer-events-none" />
+        <div className="absolute top-0 right-0 w-24 md:w-64 h-full bg-gradient-to-l from-[#323232] to-transparent z-10 pointer-events-none" />
 
         <div className="animate-marquee gap-6 px-3">
           {/* Render the images twice to create the seamless infinite loop */}
@@ -124,8 +122,7 @@ const Instagram = () => {
               href="https://instagram.com"
               target="_blank"
               rel="noreferrer"
-              data-cursor="hover"
-              className="group relative w-[280px] h-[350px] md:w-[320px] md:h-[400px] flex-shrink-0 overflow-hidden cursor-pointer bg-[#2D2420]"
+              className="group relative w-[280px] h-[350px] md:w-[320px] md:h-[400px] flex-shrink-0 overflow-hidden cursor-pointer bg-[#323232]"
             >
               {/* Image */}
               <img
@@ -135,9 +132,9 @@ const Instagram = () => {
               />
               
               {/* Hover Overlay */}
-              <div className="absolute inset-0 bg-[#1A1A1A]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center backdrop-blur-[2px]">
+              <div className="absolute inset-0 bg-[#323232]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center backdrop-blur-[2px]">
                 <FiInstagram className="w-8 h-8 text-[#EAAC7F] mb-3 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-100" />
-                <span className="text-[#F8F5F0] text-xs uppercase tracking-[0.2em] transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-150">
+                <span className="text-[#DDD0C8] text-xs uppercase tracking-[0.2em] transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-150">
                   View Post
                 </span>
               </div>

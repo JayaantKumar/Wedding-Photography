@@ -22,7 +22,7 @@ const testimonials = [
     names: 'Sophia & Alexander',
     location: 'Udaipur, India',
     quote: "Their meticulous attention to detail is unmatched. From the custom floral installations to the flawless execution of our 3-day itinerary, they allowed us to simply exist in the magic of our celebration.",
-    image: 'https://images.unsplash.com/photo-1583939000148-22ba0a09e1e2?q=80&w=2070&auto=format&fit=crop',
+    image: 'https://static.wixstatic.com/media/59c923_77225967c7ed4e1b805017f02620d4a5~mv2.jpg/v1/fill/w_640,h_438,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/59c923_77225967c7ed4e1b805017f02620d4a5~mv2.jpg',
   },
   {
     names: 'Isabella & Mateo',
