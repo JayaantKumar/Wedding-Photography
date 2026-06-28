@@ -60,21 +60,16 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 3: Contact & HQ */}
+          {/* Column 3: Contact */}
           <div className="md:col-span-3">
             <h4 className="text-xs uppercase tracking-[0.3em] text-[#EAAC7F] mb-8 font-sans">Contact</h4>
             <div className="flex flex-col gap-6 text-sm font-sans opacity-80 tracking-wide">
               <a href="mailto:inquire@psphotoandfilms.com" className="hover:text-[#EAAC7F] transition-colors">
                 inquire@psphotoandfilms.com
               </a>
-              <a href="tel:+33123456789" className="hover:text-[#EAAC7F] transition-colors">
-                +33 1 23 45 67 89
+              <a href="tel:7019306990" className="hover:text-[#EAAC7F] transition-colors">
+                70193 06990
               </a>
-              <div className="leading-relaxed">
-                <p>Atelier Headquarters</p>
-                <p>15 Place Vendôme, Paris, France</p>
-                <p>Available Worldwide</p>
-              </div>
             </div>
           </div>
 
