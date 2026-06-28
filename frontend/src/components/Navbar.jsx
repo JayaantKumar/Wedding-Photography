@@ -49,7 +49,7 @@ const Navbar = () => {
           
           {/* Logo with dynamic color */}
           <Link to="/" className={`text-2xl font-serif tracking-widest z-[60] transition-colors duration-300 ${textColorClass}`}>
-            NEW RESOLUTION
+            PS Photo & Films
           </Link>
 
           <nav className="hidden md:flex gap-10 items-center z-[60]">

@@ -64,8 +64,8 @@ const Footer = () => {
           <div className="md:col-span-3">
             <h4 className="text-xs uppercase tracking-[0.3em] text-[#EAAC7F] mb-8 font-sans">Contact</h4>
             <div className="flex flex-col gap-6 text-sm font-sans opacity-80 tracking-wide">
-              <a href="mailto:inquire@newresolutionstudio.com" className="hover:text-[#EAAC7F] transition-colors">
-                inquire@newresolutionstudio.com
+              <a href="mailto:inquire@psphotoandfilms.com" className="hover:text-[#EAAC7F] transition-colors">
+                inquire@psphotoandfilms.com
               </a>
               <a href="tel:+33123456789" className="hover:text-[#EAAC7F] transition-colors">
                 +33 1 23 45 67 89
@@ -83,11 +83,11 @@ const Footer = () => {
         {/* Bottom Section: Massive Logo & Copyright */}
         <div className="flex flex-col items-center border-t border-white/10 pt-12 relative z-10">
           <h1 className="text-[12vw] leading-none font-serif text-[#F8F5F0] opacity-10 tracking-tighter whitespace-nowrap select-none pointer-events-none mb-8">
-            NEWRESOLUTIONSTUDIO
+            PS Photo & Films
           </h1>
           
           <div className="w-full flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-[0.3em] font-sans opacity-50 gap-4">
-            <span>&copy; {new Date().getFullYear()} Newresolutionstudio</span>
+            <span>&copy; {new Date().getFullYear()} PS Photo & Films</span>
             <div className="flex gap-6">
               <a href="#" className="hover:text-[#EAAC7F]">Instagram</a>
               <a href="#" className="hover:text-[#EAAC7F]">Pinterest</a>

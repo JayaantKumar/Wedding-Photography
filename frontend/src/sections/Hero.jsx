@@ -69,7 +69,7 @@ const Hero = () => {
           ref={eyebrowRef}
           className="text-[#EAAC7F] text-xs md:text-sm uppercase tracking-[0.3em] font-sans mb-6"
         >
-          A Newresolutionstudio Experience
+          A PS Photo & Films Experience
         </p>
 
         <h1 

@@ -98,7 +98,7 @@ const Instagram = () => {
             className="group relative inline-flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-[#DDD0C8] pb-2 cursor-pointer"
           >
             <FiInstagram className="w-4 h-4 text-[#EAAC7F]" />
-            <span className="relative z-10">@newresolutionstudio</span>
+            <span className="relative z-10">@celestia_stories</span>
             <div className="w-full h-[1px] bg-white/20 absolute bottom-0 left-0" />
             <div className="w-0 h-[1px] bg-[#EAAC7F] group-hover:w-full transition-all duration-500 ease-out absolute bottom-0 left-0" />
           </a>
